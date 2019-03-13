@@ -8,9 +8,9 @@ import sys
 
 # Complete the reverseArray function below.
 def reverseArray(a):
-    revarr = ''
+    revarr = []
     for i in reversed(a):
-        revarr += str(i)
+        revarr.append(i)
     return revarr
 
 if __name__ == '__main__':
