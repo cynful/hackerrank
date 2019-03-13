@@ -1,3 +1,3 @@
 # HackerRank Solutions
 
-HackerRank solutions Python3
+HackerRank solutions in Python3

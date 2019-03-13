@@ -8,10 +8,7 @@ import sys
 
 # Complete the reverseArray function below.
 def reverseArray(a):
-    revarr = []
-    for i in reversed(a):
-        revarr.append(i)
-    return revarr
+    return reversed(a)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
