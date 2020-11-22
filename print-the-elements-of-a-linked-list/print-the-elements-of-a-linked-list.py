@@ -6,10 +6,12 @@ import random
 import re
 import sys
 
+
 class SinglyLinkedListNode:
     def __init__(self, node_data):
         self.data = node_data
         self.next = None
+
 
 class SinglyLinkedList:
     def __init__(self):
@@ -24,8 +26,8 @@ class SinglyLinkedList:
         else:
             self.tail.next = node
 
-
         self.tail = node
+
 
 # Complete the printLinkedList function below.
 
@@ -42,7 +44,8 @@ def printLinkedList(head):
         print(head.data)
         head = head.next
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     llist_count = int(input())
 
     llist = SinglyLinkedList()

@@ -13,7 +13,7 @@ def dynamicArray(n, queries):
     for i in range(n):
         seqList.append([])
     for q in queries:
-        seq = ((q[1] ^ lastAnswer)%n)
+        seq = (q[1] ^ lastAnswer) % n
         if q[0] == 1:
             seqList[seq].append(q[2])
         elif q[0] == 2:
@@ -22,8 +22,9 @@ def dynamicArray(n, queries):
             results.append(lastAnswer)
     return results
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     nq = input().rstrip().split()
 
@@ -38,7 +39,7 @@ if __name__ == '__main__':
 
     result = dynamicArray(n, queries)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
+    fptr.write("\n".join(map(str, result)))
+    fptr.write("\n")
 
     fptr.close()
