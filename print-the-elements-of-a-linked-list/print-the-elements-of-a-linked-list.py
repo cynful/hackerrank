@@ -40,7 +40,7 @@ class SinglyLinkedList:
 #
 #
 def printLinkedList(head):
-    while head is not None:
+    while head:
         print(head.data)
         head = head.next
 
